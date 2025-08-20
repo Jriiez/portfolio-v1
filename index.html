@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jristudio — The Empowering of Creativity</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Jristudio — " />
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="cursor-follower" id="follower"></div>
+  <header>
+    <div class="brand">
+      <div class="logo">JS</div>
+      <div>
+        <div class="site-name">Jristudio</div>
+        <div style="font-size:12px;color:rgba(230,230,239,0.6)">The Empowering of Creativity</div>
+      </div>
+    </div>
+    <nav>
+      <a class="btn" href="#portfolio">Portfolio</a>
+      <a class="btn" href="#services">Service</a>
+      <a class="btn primary" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="panel">
+          <h1>We are <span class="neon">Jristudio</span></h1>
+          <div class="tagline">The Empowering of Creativity</div>
+          <div class="features">
+            <div class="chip">Networking</div>
+            <div class="chip">Branding</div>
+            <div class="chip">Web3-ready</div>
+          </div>
+          <p style="margin-top:16px;color:rgba(230,230,239,0.75);">Kami gabungin estetika neon, grid, dan motion buat bikin identitas yang nyantol di kepala. Klik demo atau scroll ke portfolio.</p>
+          <div style="margin-top:18px;display:flex;gap:10px">
+            <a class="btn" href="#portfolio">Liat Portofolio</a>
+            <a class="btn primary" href="#contact">Hire us</a>
+          </div>
+        </div>
+
+        <aside class="mock panel">
+          <div class="screen">
+            <!-- Bagian header -->
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div style="display:flex;gap:8px">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              </div>
+              <div style="font-size:12px;color:rgba(230,230,239,0.6)">live • 808</div>
+            </div>
+
+            <!-- Bagian slider -->
+            <div class="slider" id="autoSlider">
+              <div class="slide" style="background:url('Foto/Screenshot from 2025-07-24 21-31-47.png') center/cover no-repeat;"></div>
+              <div class="slide" style="background:url('Foto/2025-07-24_21.19.48.png') center/cover no-repeat;"></div>
+              <div class="slide" style="background:url('Foto/Screenshot (176).png') center/cover no-repeat;"></div>
+            </div>
+            <!-- Bagian footer -->
+            <div style="display:flex;gap:8px;justify-content:center;font-size:12px;color:rgba(230,230,239,0.6)">
+              HTML • CSS • JS
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio panel">
+      <h2 style="font-family:var(--mono)">Portfolio</h2>
+      <p style="margin:6px 0 12px;color:rgba(230,230,239,0.7)">Contoh project yang berasa dari masa depan.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="thumb">Neon Dashboard</div>
+          <div style="font-weight:700">Smart Dashboard</div>
+          <div style="font-size:13px;color:rgba(230,230,239,0.6)">UI Dashboard untuk fintech futuristik.</div>
+        </article>
+        <article class="card">
+          <div class="thumb">Brand</div>
+          <div style="font-weight:700">Aether Branding</div>
+          <div style="font-size:13px;color:rgba(230,230,239,0.6)">Identitas visual untuk label musik elektronik.</div>
+        </article>
+        <article class="card">
+          <div class="thumb">XR</div>
+          <div style="font-weight:700">XR Experience</div>
+          <div style="font-size:13px;color:rgba(230,230,239,0.6)">Prototype pengalaman AR untuk event.</div>
+        </article>
+        <article class="card">
+          <div class="thumb">Web3</div>
+          <div style="font-weight:700">Portal NFT</div>
+          <div style="font-size:13px;color:rgba(230,230,239,0.6)">Marketplace kecil dengan gaya cyberpunk.</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" class="portfolio panel" style="margin-top:12px">
+      <h2 style="font-family:var(--mono)">Services</h2>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
+        <div class="chip">Branding & Identity</div>
+        <div class="chip">UI/UX Product</div>
+        <div class="chip">Motion & Interaction</div>
+        <div class="chip">Prototype & Dev</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact" style="background:transparent">
+    <div class="panel" style="flex:1">
+      <h3 style="margin-top:0;font-family:var(--mono)">Let's build something</h3>
+      <p style="color:rgba(230,230,239,0.7)">Drop a message, kita bales cepat (kalo lagi engga tidur sih).</p>
+      <form id="contactForm" onsubmit="return handleSubmit(event)">
+        <input id="name" placeholder="Nama" required />
+        <input id="email" type="email" placeholder="Email" required />
+        <textarea id="message" placeholder="What do you want to build?" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div id="status" style="margin-top:10px;font-size:13px;color:rgba(230,230,239,0.7)"></div>
+    </div>
+
+    <div class="panel" style="width:320px">
+      <h4 style="margin-top:0;font-family:var(--mono)">JriStudio Info</h4>
+      <div style="font-size:14px;color:rgba(230,230,239,0.7)">Jristudio • Creative lab
+        <div style="margin-top:8px">Email: jristudio.official@gmail.com</div>
+        <div style="margin-top:6px">Location: Indonesia</div>
+      </div>
+      <div style="margin-top:16px;font-size:12px;color:rgba(230,230,239,0.6)">Follow for vibes:</div>
+      <div style="display:flex;gap:8px;margin-top:8px">
+  <a href="https://www.instagram.com/jristudio" target="_blank" style="text-decoration:none">
+    <div class="chip">Instagram</div>
+</div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script> 
+
+</body>
+</html>
